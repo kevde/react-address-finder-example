@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Raleway', sans-serif;
+  background-color: lightgrey;
+}
+
+h2 {
+  margin: 0px;
+  padding: 0.5em;
+  text-align: center;
+  font-size: 5vw;
+  animation: zoomIn;
+  animation-duration: 1s;
+}
+
+.RealProperty {
+  width: calc(100% - 4em);
+  background-color: white;
+  margin: 1.5em;
+  padding: 0.5em;
+  animation: bounceIn;
+  box-shadow: 0em 0em 0em rgba(0, 0, 0, 0.5);
+  animation-duration: 0.5s;
+  vertical-align: middle;
+  vertical-align: middle;
+  display: block;
+  transition: box-shadow 0.5s;
+}
+
+.RealProperty:hover {
+  box-shadow: 0.3em 0.3em 0.5em rgba(0, 0, 0, 0.5);
+}
+
+.ui-autocomplete .ui-autocomplete-suggestions .ui-autocomplete-suggestion-item {
+  transition: background-color 0.2s;
+}
+
+.ui-autocomplete .ui-autocomplete-suggestions {
+  transition: visibility 0.2s;
+  animation: fadeIn;
+  animation-duration: 0.1s;
+}
+
+
+.street {
+  font-size: 2rem;
+}
+
+.location {
+  min-width: 80%;
+  display: table-cell;
+  min-height: 100%;
+  background-color: aqua;
+  background-position: center;
+  background-size: cover;
+}
+
+.rent {
+  font-size: 5vh;
+  display: table-cell;
+  width: 15%;
+  text-align: center;
+  min-height: 100%;
+  background-color: lightblue;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.block {
+  display: table;
+  width: 100%;
+}
+
+input[type="text"] {
+  width: calc(100% - 1em);
+  height: 100%;
+  font-family: 'Raleway', sans-serif;
+  font-size: 2em;
+  margin: 0.5em;
+  padding: 0.5em;
+  color: gray;
+  box-shadow: 0em 0em 0em white;
+  border-radius: 0.3em;
+  border: solid lightblue;
+  transition-duration: 0.3s;
+}
+
+input[type="text"]:focus {
+  box-shadow: 0em 0em 0.3em lightblue;
+}
+
+.App-header {
+  position: sticky;
+  top: 0px;
+  background-color: white;
+  box-shadow: 0em 0.1em 0.3em rgba(0, 0, 0, 0.3);
+}
+
+h2 {
+  margin: 0px;
+  padding: 0.5em;
+  text-align: center;
+}
+
+span.currency {
+  font-size: larger;
+}
+
+@keyframe glow {
+  from: {
+    box-shadow: 0em 0em 0.3em rgba(0, 0, 0, 0.3);
+  }
+  ;
+  to: {
+    box-shadow: 0em 0.1em 0.3em rgba(0, 0, 0, 0.3);
+  }
+  ;
+}
+
+.noresults {
+    min-height: calc(100vh - 12.6em);
+    display: inline-table;
+    width: 100%;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.noresults .container {
+    display: table-cell;
+    width: 100%;
+    vertical-align: middle;
+    font-size: 4vw;
+}
